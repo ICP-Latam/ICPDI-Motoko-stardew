@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "stardew_backend": {
+      "main": "src/stardew_backend/main.mo",
+      "type": "motoko"
+    },
+    "stardew_frontend": {
+      "dependencies": [
+        "stardew_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/stardew_frontend/src/index.html"
+      },
+      "source": [
+        "src/stardew_frontend/assets",
+        "dist/stardew_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
