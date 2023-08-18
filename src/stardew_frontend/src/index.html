@@ -12,13 +12,26 @@
     <main>
       <img src="logo2.svg" alt="DFINITY logo" />
       <br />
+      <section id="players"></section>
       <br />
-      <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
+      <form id="newplayer" action="#">
+        <label for="name">New player: &nbsp;</label>
+        <input id="name_newplayer" alt="Name" type="text" />
         <button type="submit">Click Me!</button>
       </form>
-      <section id="greeting"></section>
+      <br />
+      <form id="addstreaming" action="#">
+        <label for="name">Add streaming to player: &nbsp;</label>
+        <input id="name_addstream" alt="Name" type="text" />
+        <button type="submit">Click Me!</button>
+      </form>
+      <br />
+      <form id="deleteplayer" action="#">
+        <label for="name">Delete player: &nbsp;</label>
+        <input id="id_delete" alt="id" type="text" />
+        <button type="submit">Click Me!</button>
+      </form>
+      
     </main>
   </body>
 </html>
